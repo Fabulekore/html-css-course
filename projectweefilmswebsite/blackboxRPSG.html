@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+
+<p>Player 1</p>
+  <button onclick="player1Choose('rock')">Rock</button>
+  <button onclick="player1Choose('paper')">Paper</button>
+  <button onclick="player1Choose('scissors')">Scissors</button>
+
+
+  <p>Player 2</p>
+
+  <button onclick="player2Choose('rock')">Rock</button>
+  <button onclick="player2Choose('paper')">Paper</button>
+  <button onclick="player2Choose('scissors')">Scissors</button>
+
+  <p id="result"></p>
+
+<script>
+  function player1Choose(choice) {
+      document.getElementById('player1-choice').textContent = choice;
+  }
+
+  function player2Choose(choice) {
+      document.getElementById('player2-choice').textContent = choice;
+  }
+
+  function playGame() {
+      const player1Choice = document.getElementById('player1-choice').textContent;
+      const player2Choice = document.getElementById('player2-choice').textContent;}
+
+      if (player1Choice === '' || player2Choice === '') {
+          document.getElementById('result').textContent = 'Please make your choice!';
+      } else if (player1Choice === player2Choice) {
+          document.getElementById('result').text}
+
+</body>
+</html>
